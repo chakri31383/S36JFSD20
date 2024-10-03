@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard | MediCare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Patient Dashboard</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="patient.html">Dashboard</a></li>
+                    <li><a href="patient_appointments.html">Appointments</a></li>
+                    <li><a href="patient_records.html">Medical Records</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="patient-panel">
+        <div class="container">
+            <h2>Your Health, Simplified</h2>
+            <div class="patient-grid">
+                <div class="patient-box">
+                    <h3>Book Appointment</h3>
+                    <form action="book_appointment" method="POST">
+                        <label for="doctor">Select Doctor</label>
+                        <input type="text" id="doctor" name="doctor">
+                        <label for="time">Choose Time</label>
+                        <input type="time" id="time" name="time">
+                        <button type="submit" class="btn-primary">Book Now</button>
+                    </form>
+                </div>
+                <div class="patient-box">
+                    <h3>Your Medical Records</h3>
+                    <a href="patient_records.html" class="btn-secondary">View Records</a>
+                </div>
+                <div class="patient-box">
+                    <h3>Virtual Consultations</h3>
+                    <a href="virtual_consultation.html" class="btn-secondary">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MediCare Patient Panel</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medication Information | MediCare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Pharmacist Dashboard</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="pharmacist.html">Dashboard</a></li>
+                    <li><a href="pharmacist_prescriptions.html">E-Prescriptions</a></li>
+                    <li><a href="pharmacist_orders.html">Orders</a></li>
+                    <li><a href="pharmacist_med_info.html" class="active">Medication Info</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="pharmacist-panel">
+        <div class="container">
+            <h2>Provide Medication Information</h2>
+            <form action="submit_med_info" method="POST">
+                <label for="medication">Medication Name</label>
+                <input type="text" id="medication" name="medication" required>
+
+                <label for="info">Information</label>
+                <textarea id="info" name="info" rows="6" required></textarea>
+
+                <button type="submit" class="btn-primary">Submit Information</button>
+            </form>
+            <h3>Recently Added Information</h3>
+            <ul>
+                <li>Ibuprofen - Updated on 2024-10-02</li>
+                <li>Amoxicillin - Updated on 2024-09-28</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MediCare Pharmacist Panel</p>
+        </div>
+    </footer>
+</body>
+</html>

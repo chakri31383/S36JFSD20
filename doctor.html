@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard | MediCare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Doctor Dashboard</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="doctor.html">Dashboard</a></li>
+                    <li><a href="doctor_appointments.html">Appointments</a></li>
+                    <li><a href="doctor_records.html">Patient Records</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="doctor-panel">
+        <div class="container">
+            <h2>Manage Your Patients</h2>
+            <div class="doctor-grid">
+                <div class="doctor-box">
+                    <h3>Upcoming Consultations</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Patient Name</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>10:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Jane Smith</td>
+                                <td>11:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Michael Green</td>
+                                <td>1:00 PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="doctor_appointments.html" class="btn-secondary">View All</a>
+                </div>
+                
+                <div class="doctor-box">
+                    <h3>E-Prescriptions</h3>
+                    <form action="submit_prescription" method="POST">
+                        <label for="patient">Patient Name</label>
+                        <input type="text" id="patient" name="patient">
+                        <label for="medication">Medication</label>
+                        <input type="text" id="medication" name="medication">
+                        <button type="submit" class="btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MediCare Doctor Panel</p>
+        </div>
+    </footer>
+</body>
+</html>

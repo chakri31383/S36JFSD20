@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pharmacist Orders | MediCare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Pharmacist Dashboard</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="pharmacist.html">Dashboard</a></li>
+                    <li><a href="pharmacist_prescriptions.html">E-Prescriptions</a></li>
+                    <li><a href="pharmacist_orders.html" class="active">Orders</a></li>
+                    <li><a href="pharmacist_med_info.html">Medication Info</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="pharmacist-panel">
+        <div class="container">
+            <h2>Order Tracking</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Patient</th>
+                        <th>Medication</th>
+                        <th>Status</th>
+                        <th>Update</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ORD12345</td>
+                        <td>John Doe</td>
+                        <td>Amoxicillin</td>
+                        <td>Processing</td>
+                        <td>
+                            <select>
+                                <option value="processing" selected>Processing</option>
+                                <option value="shipped">Shipped</option>
+                                <option value="delivered">Delivered</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ORD12346</td>
+                        <td>Jane Smith</td>
+                        <td>Ibuprofen</td>
+                        <td>Shipped</td>
+                        <td>
+                            <select>
+                                <option value="processing">Processing</option>
+                                <option value="shipped" selected>Shipped</option>
+                                <option value="delivered">Delivered</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn-primary">Update Status</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MediCare Pharmacist Panel</p>
+        </div>
+    </footer>
+</body>
+</html>

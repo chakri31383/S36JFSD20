@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacist Prescriptions | MediCare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Pharmacist Dashboard</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="pharmacist.html">Dashboard</a></li>
+                    <li><a href="pharmacist_prescriptions.html" class="active">E-Prescriptions</a></li>
+                    <li><a href="pharmacist_orders.html">Orders</a></li>
+                    <li><a href="pharmacist_med_info.html">Medication Info</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="pharmacist-panel">
+        <div class="container">
+            <h2>E-Prescriptions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Patient</th>
+                        <th>Medication</th>
+                        <th>Date Issued</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Amoxicillin</td>
+                        <td>2024-10-04</td>
+                        <td><a href="#" class="btn-primary">Process</a></td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>Ibuprofen</td>
+                        <td>2024-10-03</td>
+                        <td><a href="#" class="btn-primary">Process</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MediCare Pharmacist Panel</p>
+        </div>
+    </footer>
+</body>
+</html>

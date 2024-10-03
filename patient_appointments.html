@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Appointments | MediCare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Patient Dashboard</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="patient.html">Dashboard</a></li>
+                    <li><a href="patient_appointments.html" class="active">Appointments</a></li>
+                    <li><a href="patient_records.html">Medical Records</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="patient-panel">
+        <div class="container">
+            <h2>Your Appointments</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Doctor</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                        <th>Join</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dr. Emily Clark</td>
+                        <td>2024-10-07</td>
+                        <td>10:00 AM</td>
+                        <td>Upcoming</td>
+                        <td><a href="virtual_consultation.html" class="btn-primary">Join</a></td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Michael Lee</td>
+                        <td>2024-10-05</td>
+                        <td>2:00 PM</td>
+                        <td>Completed</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="patient_book_appointment.html" class="btn-secondary">Book New Appointment</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MediCare Patient Panel</p>
+        </div>
+    </footer>
+</body>
+</html>
